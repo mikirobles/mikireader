@@ -22,10 +22,10 @@
                 var files = evt.dataTransfer.files; // FileList object.
                 // files is a FileList of File objects. List some properties.
                 //var tmppath = URL.createObjectURL(files[0]);
-                var path = (window.URL || window.webkitURL).createObjectURL(file);
-                console.log('path', path);
-                var Book = ePub(tmppath);
-                console.log(tmppath)
+                var path = (window.URL || window.webkitURL).createObjectURL(files[0]);
+               // console.log('path', path);
+                var Book = ePub(path);
+                console.log(path)
                 Book.renderTo("area")
                 //reader.readAsDataURL(files[0])
 
