@@ -1,0 +1,26 @@
+{
+  "name": "ereader",
+  "version": "1.0.0",
+  "description": "online e-reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ereader",
+    "ebook",
+    "ebook",
+    "reader",
+    "epub",
+    "online"
+  ],
+  "author": "Micael Robles",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gh-pages": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "prettier": "^1.5.3"
+  }
+}
