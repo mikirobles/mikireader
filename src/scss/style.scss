@@ -3,7 +3,7 @@
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: 0.3s all ease;
+    transition: 0.3s ease all;
 }
 
 .navbar {
@@ -30,6 +30,7 @@
         font-family: Open Sans;
         font-weight: 200;
         padding: 10px;
+        
         &:hover {
             /* Rectangle 4: */
             background: rgba(0, 0, 0, 0.17);
@@ -92,6 +93,7 @@ body {
 }
 
 .turnPage {
+    cursor: pointer;
     opacity: 0.2;
     &:hover {
         opacity: 0.7;

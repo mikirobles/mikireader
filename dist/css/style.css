@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: 0.3s all ease; }
+  transition: 0.3s ease all; }
 
 .navbar {
   height: 70px;
@@ -78,6 +78,7 @@ body {
   margin-top: 75px; }
 
 .turnPage {
+  cursor: pointer;
   opacity: 0.2;
   display: none;
   position: fixed;
