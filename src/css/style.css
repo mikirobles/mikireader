@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+#drop_zone {
+  /* Rectangle: */
+  background: #8E3B46;
+  box-shadow: -9px 9px #477890;
+  width: 408px;
+  height: 258px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  #drop_zone span:nth-child(odd) {
+    font-family: OpenSans-ExtraBold;
+    font-size: 60px;
+    color: #FDFDFD; }
+  #drop_zone span:nth-child(even) {
+    font-family: GentiumBookBasic-Italic;
+    font-size: 36.5px;
+    color: #FDFDFD; }
+
+#area {
+  width: 100%; }
