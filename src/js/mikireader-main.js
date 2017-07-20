@@ -1,6 +1,5 @@
 var Book;
 
-
 function handleFileSelect(files) {
     document.querySelectorAll("#area div").forEach(div => {
         div.remove();
