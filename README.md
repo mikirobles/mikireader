@@ -4,7 +4,7 @@
 ![Reading](http://i.imgur.com/H79BAFq.png)
 
 
-The idea:  
+# The idea:  
 Drop an .epub file in the browser and read it in an instant. This works for the moment, but I'm planning on adding more features like:  
 * Library of books (saved locally).
 * Import books from URL's.
