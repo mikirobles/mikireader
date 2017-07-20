@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.3s all ease; }
 
 .navbar {
   height: 70px;
@@ -13,13 +14,24 @@
   position: absolute;
   top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center; }
   .navbar .logo {
     background: url("../assets/logo.png") no-repeat;
     background-size: contain;
     width: 200px;
     height: 65%; }
+  .navbar span {
+    display: none;
+    user-select: none;
+    color: white;
+    font-family: Open Sans;
+    font-weight: 200;
+    padding: 10px; }
+    .navbar span:hover {
+      /* Rectangle 4: */
+      background: rgba(0, 0, 0, 0.17);
+      cursor: pointer; }
 
 body {
   width: 100vw;
@@ -33,6 +45,8 @@ body {
 
 #drop_zone {
   /* Rectangle: */
+  cursor: default;
+  user-select: none;
   background: #8E3B46;
   box-shadow: -9px 9px #477890;
   width: 408px;
@@ -40,8 +54,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  transition: 0.3s all ease; }
+  flex-direction: column; }
   #drop_zone span:nth-child(odd) {
     font-family: OpenSans-ExtraBold;
     font-size: 60px;

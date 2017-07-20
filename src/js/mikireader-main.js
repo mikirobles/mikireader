@@ -28,6 +28,7 @@ function readBook(blob) {
     Book.renderTo("area");
     $("#drop_zone").css("display", "none");
     $(".turnPage").css("display", "block");
+    $(".navbar span").css("display", "block");
     $("#area").addClass("margin-top-auto");
 }
 
@@ -43,6 +44,14 @@ function prevPage() {
 
 function nextPage() {
     Book.nextPage();
+}
+
+function prevChapter() {
+    Book.prevChapter();
+}
+
+function nextChapter() {
+    Book.nextChapter();
 }
 
 var dropZone = document.getElementById('drop_zone');
