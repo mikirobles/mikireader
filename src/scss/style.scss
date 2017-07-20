@@ -52,6 +52,7 @@ body {
 
 #drop_zone {
     /* Rectangle: */
+    position: relative;
     cursor: default;
     user-select: none;
     background: #8E3B46;
@@ -74,6 +75,11 @@ body {
     }
     &:hover {
         box-shadow: -12px 12px #477890;
+    }
+    input {
+        position: absolute;
+        width: 408px;
+        height: 258px;
     }
 }
 
