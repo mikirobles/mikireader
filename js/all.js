@@ -1,5 +1,16 @@
 var Book;
 
+function handleFileDrop(evt) {
+    document.querySelectorAll("#area div").forEach(div => {
+        div.remove();
+    })
+    console.log(evt);
+    evt.stopPropagation();
+    evt.preventDefault();
+    var files = evt.dataTransfer.files;
+    var path = (window.URL || window.webkitURL).createObjectURL(files[0]);
+    XMLRequest(path, readBook);
+}
 
 function handleFileSelect(files) {
     document.querySelectorAll("#area div").forEach(div => {
@@ -54,5 +65,5 @@ function nextChapter() {
 
 var dropZone = document.getElementById('drop_zone');
 dropZone.addEventListener('dragover', handleDragOver, false);
-
+dropZone.addEventListener('drop', handleFileDrop, false);
 //# sourceMappingURL=all.js.map
