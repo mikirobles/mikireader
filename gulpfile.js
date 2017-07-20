@@ -55,6 +55,6 @@ gulp.task('default', ['browserSync', 'sass', 'assets'], function(){
 })
 
 gulp.task('publish', function(){
-  ghpages.publish('www', function(err){console.log(err)})
+  ghpages.publish('dist', function(err){console.log(err)})
 })
 

@@ -27,14 +27,22 @@ function readBook(blob) {
     Book = ePub(blob);
     Book.renderTo("area");
     $("#drop_zone").css("display", "none");
+    $(".turnPage").css("display", "block");
     $("#area").addClass("margin-top-auto");
 }
 
 function handleDragOver(evt) {
     evt.stopPropagation();
     evt.preventDefault();
-    $("#drop_zone").css("box-shadow", "0px 0px #477890");
     evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+}
+
+function prevPage() {
+    Book.prevPage();
+}
+
+function nextPage() {
+    Book.nextPage();
 }
 
 var dropZone = document.getElementById('drop_zone');
